@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/alertify.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Comunicar</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row justify-content-between mt-3">
+      <div class="col-12 col-md-auto">
+        <h1><strong>Comunicar</strong></h1>
+      </div>
+      <div class="form-group col-12 col-md-auto align-self-center">
+        <a href=""><i class="fas fa-question-circle fa-lg mr-2 co-12 col-md-auto">Ayuda</i></a>
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Bienvenido: <?php echo ucfirst($_SESSION['email']); ?>
+          <i class="fa fa-cogs" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="../../controller/cerrarSesion.php">Cerrar Sesion</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <div class="container">
+        <form action="" class="opciones-comunicar jumbotron mt-2">
+            <fieldset class="borde-comunicar">
+              <legend>Seleccione Opciones</legend>
+              <div class="col-12">
+                <label for="columnas" class="col-12 col-md-7 col-lg-6 col-form-label">Seleccione cantidad de columnas</label>
+                <select class="custom-select col-auto" id="columnas">
+                  <option selected>-</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col mt-3">
+                <label for="columnas" class="col-12 col-md-7 col-lg-6 col-form-label">Seleccione cantidad de filas</label>
+                <select class="custom-select" id="columnas">
+                  <option selected>-</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col mt-3">
+                <div class="form-check">
+                  <input class="form-check-input col-1" type="checkbox" value="" id="Check1">
+                  <label class="form-check-label col-md-8 ml-3" for="Check1">
+                    Habilitar Barrido de la pantalla
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input col-1" type="checkbox" value="" id="Check2">
+                  <label class="form-check-label col-md-8 ml-3" for="Check2">
+                    Deshabilitar audio
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input col-1" type="checkbox" value="" id="Check3">
+                  <label class="form-check-label col-md-8 ml-3" for="Check3">
+                    Imagen grande, texto pequeño
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input col-1" type="checkbox" value="" id="Check4">
+                  <label class="form-check-label col-md-8 ml-3" for="Check4">
+                    Imagen pequeña, texto grande
+                  </label>
+                </div>
+
+                <div class="form-group row justify-content-center mt-5">
+                 <div class="form-group col-12 col-lg-3">
+                  <button id="fullscreen" class="btn btn-success" type="button">Comunicar</button>
+                 </div>
+                </div>
+
+
+                <div class="form-group row justify-content-end">
+                  <div class="col-12 col-md-auto ">
+                    <button id="inicio" class="btn btn-primary">Volver al Menu</button>
+                 </div>
+                </div>
+
+
+
+
+
+               <!-- <div class="col">
+                <input class="form-check-input col-1" type="checkbox" value="" id="check-1">
+                <label for="check-1" class="col-3">Habilitar Barrido de la pantalla</label>
+              </div> -->
+
+
+
+            </fieldset>
+          </form>
+      </div>
+
+
+
+
+
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/operaciones.js"></script>
+  <script src="js/alertify.js"></script>
+  <script src="js/pantalla-completa.js"></script>
+
+</body>
+</html>

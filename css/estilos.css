@@ -1,0 +1,359 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+body{
+	background: url(../img/fondos-pagina/6.jpg);
+	font-size: 16px;
+	font-family: sans-serif;
+
+}
+#imagenCate{
+  width: 10%;
+}
+#imagenCate img {
+  width: 100%;
+}
+/*inicio del navbar = barra de navegacion*/
+div a img{
+	border-radius: 9px;
+}
+
+/*color de la barra de navegacion*/
+.menu{
+	
+	background:rgba(16, 22, 54, 0,9);
+	-webkit-transition: all ease-out .8s; /*ease-out la animacion es mas rapida al final*/
+   -moz-transition: all ease-out .8s;    /*ease-int la animacion es mas rapida al inicio*/
+   -ms-transition:all ease-out .8s;;
+   transition: all ease-out .8s;/*trasnsicion lenta*/
+}
+/*------------------------------------------------------*/
+/*estilos del nav cuando se hace scroll*/
+.cambioFondoNav{
+	-webkit-transition: all ease-out .8s; /*ease-out la animacion es mas rapida al final*/
+   -moz-transition: all ease-out .8s;    /*ease-int la animacion es mas rapida al inicio*/
+   -ms-transition:all ease-out .8s;;
+   transition: all ease-out .8s;/*trasnsicion lenta*/
+  background:rgba(16, 22, 54, .4);
+}
+/*-------------------------------------*/
+.cambioColor{
+	color: #FFFFFF !important;
+	-webkit-transition: all ease-out .8s; /*ease-out la animacion es mas rapida al final*/
+   -moz-transition: all ease-out .8s;    /*ease-int la animacion es mas rapida al inicio*/
+   -ms-transition:all ease-out .8s;;
+   transition: all ease-out .8s;/*trasnsicion lenta*/
+
+}
+/*------------------------------------*/
+/*estilos del icono de ir arriba*/
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:rgba(16, 22, 54, .4);
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+/*-------------------------------------*/
+
+
+
+/*aqui se definen la altura y el backgrounn 
+de cada una de la secciones del index*/
+.seccion-index{
+	height: 90vh;
+	padding-top: 89px;
+}
+
+.seccion-nosotros, .seccion-ayuda, .seccion-info{
+  padding-top: 25px;	
+}
+
+
+
+.seccion-index{
+	background: url(../img/fondos-pagina/11.jpg);
+}
+
+.seccion-nosotros{
+	background: url(../img/fondos-pagina/13.jpg);
+}
+
+.seccion-ayuda{
+	background:url(../img/fondos-pagina/12.jpg);
+	background-size: auto;
+
+}
+
+.seccion-info{
+	background:url(../img/fondos-pagina/14.jpg);
+	background-size: cover;
+}
+/*-----------------------------------------*/
+/*color modificado del jumbotron en los formulario y el index*/
+.jumbotron{
+	background-color: rgba(92, 148, 191,.4) !important;
+}
+
+/*--------------------------------------------*/
+
+/*color que tomra cada li cuando el mouse se posicione sobre ellos*/
+.home:hover{
+	background:rgba(251,5,5,.6);
+}
+.nosotros:hover{
+	background:rgba(251,118,7,.6);
+}
+.ayuda:hover{
+	background:rgba(97,242,5,.6);
+}
+.informacion:hover{
+	background:rgba(0,246,203,.6);
+}
+/*--------------------------------------------*/
+/*efectos para todos los li cuando el mouse se posisione sobre ellos*/
+.nav-item:hover{
+	font-weight:bold; 
+	border-radius: 5px;
+	padding: 0 .6em;
+	font-size: 23px;
+   -webkit-transition: all ease-out .5s; /*ease-out la animacion es mas rapida al final*/
+   -moz-transition: all ease-out .5s;    /*ease-int la animacion es mas rapida al inicio*/
+   -ms-transition:all ease-out .5s;;
+   transition: all ease-out .5s;/*trasnsicion lenta*/
+}
+/*-------------------------------------------*/
+/*transiciones de los li al retirar el mouse*/
+.nav-item{
+	padding: .5em;
+  -webkit-transition: all ease-out .5s; /*webkit prefijo para navegadores*/
+  -moz-transition: all ease-out .5s;
+  -ms-transition:all ease-out .5s;;
+  transition: all ease-out .5s;/*trasnsicion lenta*/
+}
+/*espaccio entre icionos y enlaces*/
+.nav-item i{
+	margin-right: 5px;
+}
+/*--------------------------------------------*/
+
+/*estilos generales de la filas*/
+.row{
+ text-align: center;
+}
+
+
+/*estilos del login*/
+.borde-login {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+}
+
+.opciones-login legend {
+  margin-left: 30px;
+  width: auto;
+}
+
+.blockquote-footer{
+	font-weight: bold;
+	color: #000000;
+}
+/*-----------------------------*/
+
+/*estilos registro*/
+.borde-registro {
+  border: 1px solid black;
+  padding: .5em 1.2em;
+}
+
+.opciones-registro legend {
+  margin-left: 30px;
+  width: auto;
+}
+div.registrar .jumbotron{
+	padding: 1rem !important;
+}
+/*---------------------------------------*/
+/*estilos nostros*/
+ul{
+text-decoration: none;
+}
+ul li {
+	list-style: none;
+	text-align: left;
+}
+/*----------------------------------------*/
+/*estilos del menu*/
+.borde-menu {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+}
+
+.opciones-menu legend {
+  margin-left: 30px;
+  width: auto;
+}
+.borde-menu .boton-menu{
+  padding: 1em;
+  margin: 1.3em 0;
+}
+/*------------------------------------------*/
+/*estilos de categorias*/
+.borde-categorias {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+}
+
+.opciones-categorias legend {
+  margin-left: 30px;
+  width: auto;
+}
+/*------------------------------------------*/
+/*estilos de subcategorias*/
+.borde-subcategorias {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+}
+
+.opciones-subcategorias legend {
+  margin-left: 30px;
+  width: auto;
+}
+.modificarSubCategoria{
+	background-color: #F3EC23 !important;
+	border-color: #F3EC23 !important;
+}
+/*---------------------------------*/
+/*estilos acciones*/
+.borde-acciones {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+}
+
+.opciones-acciones legend {
+  margin-left: 30px;
+  width: auto;
+}
+/*----------------------------------------------*/
+/*estilos de comunicar*/
+.borde-comunicar {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+}
+
+.opciones-comunicar legend {
+  margin-left: 30px;
+  width: auto;
+}
+/*---------------------------------------------*/
+/*estilos de seleccion-categorias*/
+.borde-seleccion-categorias {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+}
+
+.opciones-seleccion-categorias legend {
+  margin-left: 30px;
+  width: auto;
+}
+/*---------------------------------------------*/
+/*estilos de seleccion-subcategorias*/
+.seleccion-Subcategorias{
+  background: #eee;	
+}
+
+.borde-seleccion-subcategorias {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+}
+div.controlArrow.prev, div.controlArrow.next {
+	border-color: transparent #000  !important;
+}
+
+.opciones-seleccion-subcategorias legend {
+  margin-left: 30px;
+  width: auto;
+}
+body.seleccion-Subcategorias{
+	overflow: hidden;
+}
+section {
+    float: left;
+    display: block;
+    height: 100%;
+    margin: 0;
+}
+
+
+.horizon-prev, .horizon-next {
+    position: fixed;
+    top: 50%;
+    margin-top: -24px;
+    z-index: 9999;
+}
+
+.horizon-prev {
+    left: 20px;
+}
+
+.horizon-next {
+    right: 20px;
+}
+
+
+/*---------------------------------------------*/
+/*estilos de comunicar-texto-chico*/
+.borde-comunicar-texto-chico {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+}
+
+.opciones-comunicar-texto-chico legend {
+  margin-left: 30px;
+  width: auto;
+}
+/*---------------------------------------------*/
+/*color del fondo seleccion-categorias*/
+.seleccion-categorias{
+	background: #eee;
+}
+/*----------------------------------------------*/
+/*estilos del nav definidos para moviles ya que no poseen hover*/
+@media (max-width: 991px){
+
+.home{
+	background:rgba(251,5,5,.6);
+	
+}
+.nosotros{
+	background:rgba(251,118,7,.6);
+}
+.ayuda{
+	background:rgba(97,242,5,.6);
+}
+.informacion{
+	background:rgba(0,246,203,.6);
+}
+ul li{
+	margin: 5px 0;
+	text-align: center;
+}
+
+}
+/*pequeña modificacion de los select de la seccion comunicar*/
+@media (max-width: 767px){
+	.opciones-subcategorias select{
+       margin-left : 1em;
+ 	}
+}
+/*-----------------------------------------------------*/
