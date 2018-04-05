@@ -156,7 +156,7 @@ de cada una de la secciones del index*/
 /*estilos del login*/
 .borde-login {
   border: 1px solid black;
-  padding: .5em 1.5em;
+  padding: .1em 1em;
 }
 
 .opciones-login legend {
@@ -167,6 +167,10 @@ de cada una de la secciones del index*/
 .blockquote-footer{
 	font-weight: bold;
 	color: #000000;
+}
+.modal-content{
+  background: whitesmoke;
+  padding: 0 .25em;
 }
 /*-----------------------------*/
 
