@@ -109,9 +109,8 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+      
+              
               </div>
               <div class="modal-body">
                 <form id="validar-login" action="" class="opciones-login">
@@ -152,14 +151,127 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-danger " data-dismiss="modal">Cerrar</button>
               </div>
             </div>
           </div>
         </div>
 
         <div class="columna col-xs-12 col-sm-12 col-md-6 mt-2">
-          <button id="ir-registro" type="button" class="btn btn-primary btn-lg">Registrarse</button>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registro">Registrarse</button>
+        </div>
+        <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="#registro" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+              </div>
+              <div class="modal-body">
+              <form  action="" id="formulario-registro" class="opciones-registro">
+          <fieldset class="borde-registro">
+            <legend>Formulario de Registro</legend>
+            <div class="form-group row ">
+              <div class="col-12 col-md-3 ">
+                <label for="user" class="col-form-label">Correo (*)</label>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="input-group">
+                  <div class="input-group-text"><i class="fa fa-user"></i></div>
+                  <input type="email" name="email" class="form-control" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-md-3">
+                  <label for="clave" class="col-form-label">Contraseña (*)</label>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="input-group">
+                  <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                  <input type="password" name="password" class="form-control" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-md-3">
+                <label for="clave" class="col-form-label">Repita Contraseña (*)</label>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="input-group">
+                  <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                  <input type="password" name="password2" class="form-control" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-md-3">
+                <label for="user" class="col-form-label">Ciudad (*)</label>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="input-group">
+                  <div class="input-group-text"><i class="fa fa-globe"></i></div>
+                  <input type="text" name="ciudad" class="form-control" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-md-3">
+                <label for="user" class="col-form-label">Edad</label>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="input-group">
+                  <div class="input-group-text"><i class="fa fa-heart"></i></div>
+                  <input type="text" maxlength="3" max="115" name="edad" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-md-3">
+                <label for="user" class="col-form-label">Diagnostico</label>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="input-group"> 
+                  <textarea type="text" name="diagnostico" class="form-control"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-sm-3">
+                <label for="user">Discapacidad</label>
+              </div>
+              <div class="col">
+                <div class="col-4 col-sm-auto col-md-4 col-lg-3 form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="visual" name="discapacidad"> Visual
+                  </label>
+                </div>
+                <div class="col-4 col-sm-auto col-md-4 col-lg-3 form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="auditiva" name="discapacidad"> Auditiva
+                  </label>
+                </div>
+                <div class="col-4 col-sm-auto col-md-4 col-lg-3 form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="motora" name="discapacidad"> Motora
+                  </label>
+                </div>
+                <div class="col-4 col-sm-auto col-md-4 col-lg-3 form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4   " value="cognitiva" name="discapacidad"> Cognitiva
+                  </label>
+                </div>
+              </div>
+              <div class="columna col-12">
+                <button type="submit" name="button" class="btn btn-primary btn-md">Ingresar</button>
+                <label for="user" class="col-form-label">(*)Campos Obligatorios</label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+              <div class="modal-footer ">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -7,10 +7,15 @@
      box-sizing: border-box;
 }
 
+@font-face {
+  font-family: crayonkids;
+  src: url('../fonts/crayonkids.ttf');
+}
+
 body{
 	background: url(../img/fondos-pagina/6.jpg);
 	font-size: 16px;
-	font-family: sans-serif;
+	font-family: 'crayonkids',sans-serif;
 
 }
 #imagenCate{
@@ -169,24 +174,32 @@ de cada una de la secciones del index*/
 	color: #000000;
 }
 .modal-content{
-  background: whitesmoke;
+  background: rgba(224, 255, 255,.7);
   padding: 0 .25em;
+  border-radius: 0.6rem !important;
+}
+.modal-header{
+  border-bottom: none !important;
+  padding: .6em !important;
+}
+
+.modal-footer{
+  border-top: none !important;
+  padding: .35em !important;
 }
 /*-----------------------------*/
 
 /*estilos registro*/
 .borde-registro {
   border: 1px solid black;
-  padding: .5em 1.2em;
+  padding: .1em 1em;
 }
 
 .opciones-registro legend {
   margin-left: 30px;
   width: auto;
 }
-div.registrar .jumbotron{
-	padding: 1rem !important;
-}
+
 /*---------------------------------------*/
 /*estilos nostros*/
 ul{

@@ -108,7 +108,7 @@ function registrarUser(x){
       } else if (resultado ==3) {
         alertify.success('Usuario creado con exito. Redireccionando...')
         setTimeout(function(){
-          window.location='login.php'
+          window.location='index.php'
         },3000)
       }
     }
