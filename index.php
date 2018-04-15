@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <title>Inicio</title>
+  <title>jajajajaahora</title>
   <script src="js/smooth-scroll.min.js"></script>
   <script>
     smoothScroll.init({
