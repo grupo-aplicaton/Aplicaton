@@ -2,17 +2,37 @@
   include_once('../../model/conexion.php');
   include_once('../../controller/seguridad.php');
 
-function crearCategorias() {
+function crearCategoriasModificar() {
   $mysql = conexion();
   $sql = "SELECT * FROM categoria WHERE idUsuario =\"".$_SESSION['iduser']."\" ";
   $resultado = $mysql->query($sql);
-  $select = '<select name="categoria" id="cate" class="form-control" required>';
-    $select .= '<option value="" selected="seleted" disabled>Seleccione una Categoria</option>';
+  $tbody = "<tbody>";
     while ($fila = $resultado->fetch_array()) {
-      $select .= '<option value="'.$fila[0].'">'.$fila[1].'</option>';  
+      $tbody .= "</tr>";
+      $tbody .= "<td>".$fila[1]."</td>";
+      $tbody .= "<td><img src="."../../model/".$fila[2]." width=50 height=50> </td>";
+			$tbody .= "<td><a href='#' data-id='".$fila[0]."' id='editar-noticia'>Editar</a></td>";
+			
+		  $tbody .= "</tr>";
     }
-  $select .= '</select>';
-  return printf($select);
+    $tbody .= "</tbody>";
+  return printf($tbody);
+}
+function crearCategoriasEliminar() {
+  $mysql = conexion();
+  $sql = "SELECT * FROM categoria WHERE idUsuario =\"".$_SESSION['iduser']."\" ";
+  $resultado = $mysql->query($sql);
+  $tbody = "<tbody>";
+    while ($fila = $resultado->fetch_array()) {
+      $tbody .= "</tr>";
+      $tbody .= "<td>".$fila[1]."</td>";
+      $tbody .= "<td><img src="."../../model/".$fila[2]." width=50 height=50> </td>";
+			$tbody .= "<td><a href='#' data-id='".$fila[0]."' id='eliminar-noticia'>Eliminar</a></td>";
+			
+		  $tbody .= "</tr>";
+    }
+    $tbody .= "</tbody>";
+  return printf($tbody);
 }
 function crearsubCategorias() {
   $mysql = conexion();

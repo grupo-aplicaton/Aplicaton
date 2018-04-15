@@ -21,9 +21,7 @@ body{
 #imagenCate{
   width: 10%;
 }
-#imagenCate img {
-  width: 100%;
-}
+
 /*inicio del navbar = barra de navegacion*/
 div a img{
 	border-radius: 9px;
@@ -234,6 +232,9 @@ ul li {
 .opciones-categorias legend {
   margin-left: 30px;
   width: auto;
+}
+.tabla-cate {
+ 
 }
 /*------------------------------------------*/
 /*estilos de subcategorias*/
