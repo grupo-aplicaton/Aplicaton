@@ -91,7 +91,7 @@
               <tr>
                 <th>Nombre Categoria</th>
                 <th>Ruta Imagen</th>
-                <th>Editar</th>
+                <td>Editar</td>
               </tr>
               <tr>
                 <?php crearCategoriasModificar(); ?>
