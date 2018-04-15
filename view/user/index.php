@@ -40,17 +40,21 @@
             <legend>Seleccione Opcion</legend>
              <div class="row justify-content-center ">
                  <div class="form-group col-12 col-md-4">
+                   <a href="categorias.php"><img src="../../img/icono-menu/categorias1.png" alt="" class="img-fluid"></a>
                    <button id="categorias" class="btn btn-primary col boton-menu">Categorias</button>
                  </div>
 
                  <div class="form-group col-12 col-md-4 ">
+                   <a href="subcategorias.php"><img src="../../img/icono-menu/subcategorias1.png" alt="" class="img-fluid"></a>
                    <button id="subcategorias" class="btn btn-primary col boton-menu">Sub-Categoria</button>
                  </div>
                  <div class="form-group col-12 col-md-4">
+                   <a href="acciones.php"><img src="../../img/icono-menu/action.png" alt="" class="img-fluid"></a>
                    <button id="acciones" class="btn btn-primary col boton-menu">Acciones</button>
                  </div>
                  <div class="w-100"></div>
                  <div class="form-group col-12 col-md-4">
+                   <a href="comunicar.php"><img src="../../img/icono-menu/comunicar1.png" alt="" class="img-fluid"></a>
                    <button class="btn btn-success col-12 boton-menu">Comunicar</button>
                  </div>
              </div>
