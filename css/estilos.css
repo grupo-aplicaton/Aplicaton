@@ -15,8 +15,11 @@
 body{
 	background: url(../img/fondos-pagina/6.jpg);
 	font-size: 16px;
-	font-family: 'crayonkids',sans-serif;
+  font-family: 'crayonkids',sans-serif;
+}
 
+.body-index{
+  padding-top: 90px;
 }
 #imagenCate{
   width: 10%;
@@ -75,7 +78,6 @@ div a img{
 de cada una de la secciones del index*/
 .seccion-index{
 	height: 90vh;
-	padding-top: 89px;
 }
 
 .seccion-nosotros, .seccion-ayuda, .seccion-info{

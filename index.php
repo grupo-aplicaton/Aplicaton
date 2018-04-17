@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <title>jajajajaahora</title>
+  <title>Inicio</title>
   <script src="js/smooth-scroll.min.js"></script>
   <script>
     smoothScroll.init({
@@ -20,15 +20,15 @@
       selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
       speed: 1700, // Integer. How fast to complete the scroll in milliseconds
       easing: 'easeInOutCubic', // Easing pattern to use
-      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      offset: 90, // Integer. How far to offset the scrolling anchor location in pixels
       callback: function (anchor, toggle) {} // Function to run after scrolling
     });
   </script>
 </head>
 
-<body>
+<body class="body-index">
 
-  <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light menu">
     <div class="container-fluid">
 
       <a href="index.php" class="navbar-brand">
@@ -66,7 +66,7 @@
 
   <div class="container-fluid seccion-index" id="sec-1">
     <div class="row carousel">
-      <div class="d-none col-md-12 d-sm-block">
+      <div class="d-none col-md-12 d-md-block">
         <div class="carousel slide" id="inicio-carousel" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#inicio-carousel" data-slide-to="0"></li>
@@ -99,10 +99,8 @@
     </div>
 
     <div class="container">
-
-
       <div class="row mt-2">
-        <div class="columna col-xs-12 col-sm-12 col-md-6">
+        <div class="columna col-xs-12 col-sm-12 col-md-6 mt-2">
           <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login">Ingresar</button>
         </div>
         <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="#login" aria-hidden="true">
@@ -274,6 +272,7 @@
           </div>
         </div>
       </div>
+    </div>
 
       <div class="row">
         <div class="col-12 mt-2">
@@ -295,10 +294,10 @@
 
   <div class="container-fluid seccion-nosotros" id="sec-2">
     <div class="row">
-      <div class="col-12 col-md-5 col-lg columna-nosotros align-self-center">
+      <div class="col-12 col-md-5 col-lg align-self-center">
         <img class="img-fluid nosotros d-none d-md-block" src="img/nosotros.jpg" alt="">
       </div>
-      <div class="col-12 col-md-7 col-lg columna-nosotros jumbotron">
+      <div class="col-12 col-md-7 col-lg jumbotron">
         <h3>Nosotros</h3>
         <p class="text-justify">
           <strong>Primero que nada, quisieramos saludar y agradecer a ustedes por visitar nuestra página web, la cual fue desarrollada
@@ -344,7 +343,7 @@
 
   <div class="container-fluid seccion-ayuda " id="sec-3">
     <div class="row mt-1">
-      <div class="col-12 col-md-7 col-lg columna-nosotros jumbotron">
+      <div class="col-12 col-md-7 col-lg jumbotron">
         <h2>Ayuda</h2>
         <p class="text-justify">
           <strong>Ser un equipo que contribuya al desarrollo de sistemas informáticos fundados en valores de integración social,
@@ -355,7 +354,7 @@
             al fortalecimiento de sus capacidades, vínculo social e integración en cada área.</strong>
         </p>
       </div>
-      <div class="col-12 col-md-5 col-lg columna-nosotros align-self-center">
+      <div class="col-12 col-md-5 col-lg align-self-center">
         <img class="img-fluid nosotros d-none d-md-block" src="img/nosotros.jpg" alt="">
       </div>
     </div>
@@ -363,10 +362,10 @@
 
   <div class="container-fluid seccion-info " id="sec-4">
     <div class="row ">
-      <div class="col-12 col-md-5 col-lg columna-nosotros align-self-center">
+      <div class="col-12 col-md-5 col-lg align-self-center">
         <img class="img-fluid nosotros d-none d-md-block" src="img/nosotros.jpg" alt="">
       </div>
-      <div class="col-12 col-md-7 col-lg columna-nosotros jumbotron">
+      <div class="col-12 col-md-7 col-lg jumbotron">
         <h2>Informacion</h2>
         <p class="text-justify">
           <strong>El presente sistema busca colaborar a los usuarios que no se puedan comunicar de una forma típica (lenguaje hablado
